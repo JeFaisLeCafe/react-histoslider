@@ -4,9 +4,9 @@ import { useState } from "react";
 
 import { Box, InputAdornment, Slider, TextField } from "@mui/material";
 
+import { HistoSliderProps } from "../../types";
+import { getHistogramData } from "../../utils";
 import BarChart from "./BarChart";
-import { HistoSliderProps } from "./types";
-import { getHistogramData } from "./utils";
 
 const HistoSlider = ({
   data,

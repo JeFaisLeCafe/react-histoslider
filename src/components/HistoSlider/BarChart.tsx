@@ -3,8 +3,8 @@ import { Bar } from "react-chartjs-2";
 
 import { useTheme } from "@mui/material";
 
-import { BarChartProps } from "./types";
-import { isLabelInSliderRange } from "./utils";
+import { BarChartProps } from "../../types";
+import { isLabelInSliderRange } from "../../utils";
 
 const BarChart = ({
   yValues,

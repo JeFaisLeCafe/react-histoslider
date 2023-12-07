@@ -1,19 +1,20 @@
 {
   "name": "react-histoslider",
   "version": "1.0.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "description": "A React component for selecting a range of values with a mui Slider, and a histogram of the values, using chartjs",
-  "publishConfig": {
-    "registry": "https://github.com/JeFaisLeCafe/react-histoslider.git"
-  },
-  "scripts": {
-    "build": "bun run build.mjs",
-    "prepublishOnly": "bun run build"
-  },
+  "main": "dist/cjs/index.js",
+  "type": "module",
+  "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
+  "types": "dist/index.d.ts",
+  "description": "A React component for selecting a range of values with a mui Slider, and a histogram of the values, using chartjs",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "rollup": "rollup -c"
+  },
   "keywords": [
     "bun",
     "react",
@@ -37,18 +38,20 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.20",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "bun-types": "^1.0.15",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
+    "rollup": "^4.6.1",
+    "rollup-plugin-dts": "^6.1.0",
     "typescript": "^5.2.2"
   },
-  "peerDependencies": {
-    "react": ">=15.0.1",
-    "react-dom": ">=15.0.1",
-    "@mui/material": "^5.14.20",
-    "react-chartjs-2": "^5.2.0"
+  "dependencies": {
+    "tslib": "^2.6.2"
   }
 }

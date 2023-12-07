@@ -10,9 +10,13 @@
     "noUnusedLocals": true,
     "noImplicitAny": true,
     "allowJs": true,
-    "noEmit": true,
     "outDir": "dist",
     "resolveJsonModule": true,
-    "types": ["bun-types"]
+    "declaration":true,
+    "types": ["bun-types"],
+    "declarationDir": "types",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true,
   }
 }

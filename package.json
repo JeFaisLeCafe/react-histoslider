@@ -34,6 +34,8 @@
   "bugs": "https://github.com/JeFaisLeCafe/react-histoslider/issues",
   "author": "Pierre-Etienne Soury <pierretienne.soury@gmail.com>",
   "devDependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.20",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",

@@ -1,9 +1,9 @@
 {
   "name": "react-histoslider",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "description": "",
+  "description": "A React component for selecting a range of values with a mui Slider, and a histogram of the values, using chartjs",
   "scripts": {
     "build": "bun run build.mjs",
     "prepublishOnly": "bun run build"
@@ -12,19 +12,38 @@
     "dist"
   ],
   "keywords": [
-    "bun"
+    "bun",
+    "react",
+    "slider",
+    "bar",
+    "histogram",
+    "chartjs",
+    "mui",
+    "material-ui",
+    "histoslider"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/wobsoriano/pkg-name#readme",
+  "homepage": "https://github.com/jefaislecafe/react-histoslider#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wobsoriano/pkg-name.git"
+    "url": "git+https://github.com/jefaislecafe/react-histoslider.git"
   },
-  "bugs": "https://github.com/wobsoriano/pkg-name/issues",
-  "author": "Robert Soriano <sorianorobertc@gmail.com>",
+  "bugs": "https://github.com/jefaislecafe/react-histoslider/issues",
+  "author": "Pierre-Etienne Soury <pierretienne.soury@gmail.com>",
   "devDependencies": {
-    "bun-plugin-dts": "^0.2.1",
-    "bun-types": "^1.0.7",
+    "@mui/material": "^5.14.20",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "bun-types": "^1.0.15",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "react": ">=15.0.1",
+    "react-dom": ">=15.0.1",
+    "@mui/material": "^5.14.20",
+    "react-chartjs-2": "^5.2.0"
   }
 }
